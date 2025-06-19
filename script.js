@@ -339,15 +339,15 @@ projectFilter.forEach(button => {
     });
 });
 
-// Console message for developers
-console.log(`
-  🚀 Welcome to Alish Pawn's Portfolio!
-  📧 Contact: alishpawn00@gmail.com
-  🌐 GitHub: https://github.com/AlishPawn1
-  💼 LinkedIn: https://www.linkedin.com/in/alish-pawn-06a10a346/
+// // Console message for developers
+// console.log(`
+//   🚀 Welcome to Alish Pawn's Portfolio!
+//   📧 Contact: alishpawn00@gmail.com
+//   🌐 GitHub: https://github.com/AlishPawn1
+//   💼 LinkedIn: https://www.linkedin.com/in/alish-pawn-06a10a346/
   
-  Thanks for checking out the code! 😊
-  `)
+//   Thanks for checking out the code! 😊
+//   `)
 
 // Keyboard navigation for accessibility
 document.addEventListener("keydown", (e) => {
@@ -456,7 +456,7 @@ if (document.querySelector('.education-slider')) {
         perPage: 1,
         arrows: false,
         pagination: true,
-        // autoplay: true,
+        autoplay: true,
         interval: 2000,
         gap: 30,
         autoScroll: {
