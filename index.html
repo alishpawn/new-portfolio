@@ -47,6 +47,9 @@
 
 
 <body>
+    <canvas id="fluidCanvas"></canvas>
+    <div class="mouse-cursor cursor-outer"></div>
+    <div class="mouse-cursor cursor-inner"></div>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
@@ -137,15 +140,15 @@
                         </div>
                         <div class="info-item">
                             <i class="fas fa-map-marker-alt"></i>
-                            <span>Bhaktapur, Nepal</span>
+                            <a href="https://www.google.com/maps/place/Bhaktapur,+Nepal" target="_blank" rel="noopener noreferrer">Bhaktapur, Nepal</a>
                         </div>
                         <div class="info-item">
                             <i class="fas fa-phone"></i>
-                            <span>+977 9742828051</span>
+                            <a href="tel:+9779742828051">+977 9742828051</a>
                         </div>
                         <div class="info-item">
                             <i class="fas fa-envelope"></i>
-                            <span>alishpawn00@gmail.com</span>
+                            <a href="mailto:alishpawn00@gmail.com">alishpawn00@gmail.com</a>
                         </div>
                     </div>
                 </div>
@@ -361,6 +364,10 @@
                         <div class="skill-item">
                             <i class="fab fa-java"></i>
                             <span>Java</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-store"></i>
+                            <span>NopCommerce</span>
                         </div>
                     </div>
                 </div>
@@ -680,15 +687,15 @@
                     <div class="contact-details">
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
-                            <span>alishpawn00@gmail.com</span>
+                            <a href="mailto:alishpawn00@gmail.com">alishpawn00@gmail.com</a>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-phone"></i>
-                            <span>+977 9742828051</span>
+                            <a href="tel:+9779742828051">+977 9742828051</a>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-map-marker-alt"></i>
-                            <span>Bhaktapur, Nepal</span>
+                            <a href="https://www.google.com/maps/place/Bhaktapur,+Nepal" target="_blank" rel="noopener noreferrer">Bhaktapur, Nepal</a>
                         </div>
                     </div>
                     <div class="social-links">
@@ -747,7 +754,8 @@
                     <a href="#home">
                         <span>Alish</span>Pawn
                     </a>
-                    <p>Web Developer based in Bhaktapur, Nepal.</p>
+                    <p>Frontend Web Developer & BCA Student based in Bhaktapur, Nepal.</p>
+                    <p>Specializing in React, JavaScript, and modern web technologies. Passionate about creating responsive, user-friendly web applications and implementing secure payment integrations.</p>
                 </div>
 
                 <div class="footer-links">
@@ -807,7 +815,7 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2025 Alish Pawn. All Rights Reserved.</p>
+                <p>&copy; <span id="current-year"></span> Alish Pawn. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
@@ -833,10 +841,16 @@
         </div>
     </div>
 
+    <script src="js/jQuery.js"></script>
     <script src="js/splide.min.js"></script>
     <script src="js/email.min.js"></script>
     <script src="js/email.js"></script>
+    <script src="js/WebGL.js"></script>
     <script src="script.js"></script>
+    <script>
+        // Automatically update copyright year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>
