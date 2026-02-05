@@ -60,8 +60,10 @@ function populateHero() {
     const { personalInfo } = portfolioContent;
     
     // Update name
-    const heroTitle = document.querySelector('.hero-title .highlight');
-    if (heroTitle) heroTitle.textContent = personalInfo.name;
+    const heroTitle = document.querySelector('.hero-title');
+    if (heroTitle) {
+        heroTitle.innerHTML = `Hi, I'm <span class="highlight">${personalInfo.name}</span>`;
+    }
     
     // Update title/role
     const heroSubtitle = document.querySelector('.hero-subtitle');

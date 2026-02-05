@@ -246,27 +246,65 @@ document.querySelectorAll("section").forEach((section) => {
 
 // Typing animation for hero title
 function typeWriter(element, text, speed = 100) {
-    let i = 0
-    element.innerHTML = ""
-
-    function type() {
-        if (i < text.length) {
-            element.innerHTML += text.charAt(i)
-            i++
-            setTimeout(type, speed)
+    // Check if text contains HTML
+    const hasHTML = /<[^>]*>/g.test(text)
+    
+    if (hasHTML) {
+        // For HTML content, extract the plain text to type
+        const tempDiv = document.createElement('div')
+        tempDiv.innerHTML = text
+        const fullText = tempDiv.textContent || tempDiv.innerText
+        
+        let i = 0
+        element.innerHTML = ""
+        
+        function type() {
+            if (i < fullText.length) {
+                const currentText = fullText.substring(0, i + 1)
+                
+                // Check if we're in the highlighted part (after "Hi, I'm ")
+                if (text.includes('span class="highlight"')) {
+                    const prefix = "Hi, I'm "
+                    if (i < prefix.length) {
+                        element.textContent = currentText
+                    } else {
+                        const highlightedText = currentText.substring(prefix.length)
+                        element.innerHTML = `${prefix}<span class="highlight">${highlightedText}</span>`
+                    }
+                } else {
+                    element.textContent = currentText
+                }
+                i++
+                setTimeout(type, speed)
+            }
         }
+        type()
+    } else {
+        // Plain text typing
+        let i = 0
+        element.innerHTML = ""
+        
+        function type() {
+            if (i < text.length) {
+                element.innerHTML += text.charAt(i)
+                i++
+                setTimeout(type, speed)
+            }
+        }
+        type()
     }
-
-    type()
 }
 
 // Initialize typing animation when page loads
 window.addEventListener("load", () => {
-    const heroTitle = document.querySelector(".hero-title")
-    if (heroTitle) {
-        const originalText = heroTitle.textContent
-        typeWriter(heroTitle, originalText, 50)
-    }
+    // Wait for content-loader to finish
+    setTimeout(() => {
+        const heroTitle = document.querySelector(".hero-title")
+        if (heroTitle) {
+            const originalHTML = heroTitle.innerHTML
+            typeWriter(heroTitle, originalHTML, 80)
+        }
+    }, 500)
 })
 
 // Add scroll-to-top functionality
