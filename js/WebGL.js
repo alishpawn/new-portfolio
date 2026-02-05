@@ -8,7 +8,7 @@ if (document.readyState === 'complete') {
 }
 
 const initFluid = () => {
-  // anim setup || in an active project you can set this to the html body. however ive found a bound box to the viewport looks + performs better
+  // anim setup || in an  active project you can set this to the html body. however ive found a bound box to the viewport looks + performs better
   const canvas = document.getElementById('fluidCanvas');
 
   function resizeCanvas() {
