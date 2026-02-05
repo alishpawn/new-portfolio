@@ -156,7 +156,8 @@ body {
     border-bottom: 1px solid var(--border-color);
 }
 
-[data-theme="dark"] .navbar {
+/* [data-theme="dark"]  */
+.navbar {
     background: rgba(15, 23, 42, 0.95);
 }
 
@@ -427,7 +428,8 @@ section {
     position: relative;
 }
 
-[data-theme="dark"] .about {
+/* [data-theme="dark"]  */
+.about {
     background: rgba(30, 41, 59, 0.7);
 }
 
@@ -504,7 +506,8 @@ section {
     position: relative;
 }
 
-[data-theme="dark"] .cv-section {
+/* [data-theme="dark"]  */
+.cv-section {
     background: rgba(30, 41, 59, 0.7);
 }
 
@@ -659,7 +662,8 @@ section {
     position: relative;
 }
 
-[data-theme="dark"] .skills {
+/* [data-theme="dark"]  */
+.skills {
     background: rgba(30, 41, 59, 0.7);
 }
 
@@ -813,7 +817,8 @@ section {
     position: relative;
 }
 
-[data-theme="dark"] .contact {
+/* [data-theme="dark"]  */
+.contact {
     background: rgba(30, 41, 59, 0.7);
 }
 
@@ -1273,7 +1278,8 @@ a {
     position: relative;
 }
 
-[data-theme="dark"] .payment-integration {
+/* [data-theme="dark"]  */
+.payment-integration {
     background: rgba(30, 41, 59, 0.7);
 }
 

@@ -1,7 +1,11 @@
 // Fluid Dynamics Animation - put the animation on load, otherwise it bugs out
-window.addEventListener('load', () => {
+if (document.readyState === 'complete') {
   initFluid();
-});
+} else {
+  window.addEventListener('load', () => {
+    initFluid();
+  });
+}
 
 const initFluid = () => {
   // anim setup || in an active project you can set this to the html body. however ive found a bound box to the viewport looks + performs better
