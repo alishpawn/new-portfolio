@@ -37,7 +37,7 @@ const themeToggle = document.getElementById("theme-toggle")
 const body = document.body
 
 // Check for saved theme preference or default to 'light'
-const currentTheme = localStorage.getItem("theme") || "light"
+const currentTheme = localStorage.getItem("theme") || "dark"
 body.setAttribute("data-theme", currentTheme)
 
 // Update theme toggle icon
@@ -56,7 +56,7 @@ updateThemeIcon(currentTheme)
 // Theme toggle functionality
 themeToggle.addEventListener("click", () => {
     const currentTheme = body.getAttribute("data-theme")
-    const newTheme = currentTheme === "dark" ? "light" : "dark"
+    const newTheme = currentTheme === "light" ? "dark" : "light"
 
     body.setAttribute("data-theme", newTheme)
     localStorage.setItem("theme", newTheme)
@@ -347,40 +347,6 @@ window.addEventListener("load", () => {
     }, 100)
 })
 
-const projectFilter = document.querySelectorAll('.project-filter .filter-btn');
-const projectCards = document.querySelectorAll('.project-card');
-
-projectFilter.forEach(button => {
-    button.addEventListener('click', function () {
-        // Remove active class from all buttons
-        projectFilter.forEach(btn => btn.classList.remove('active'));
-
-        // Add active class to clicked button
-        this.classList.add('active');
-
-        const filter = this.getAttribute('data-filter');
-
-        // Show/hide project cards based on filter
-        projectCards.forEach(card => {
-            if (filter === 'all' || card.getAttribute('data-category') === filter) {
-                card.style.display = 'block';
-            } else {
-                card.style.display = 'none';
-            }
-        });
-    });
-});
-
-// // Console message for developers
-// console.log(`
-//   🚀 Welcome to Alish Pawn's Portfolio!
-//   📧 Contact: alishpawn00@gmail.com
-//   🌐 GitHub: https://github.com/AlishPawn1
-//   💼 LinkedIn: https://www.linkedin.com/in/alish-pawn-06a10a346/
-  
-//   Thanks for checking out the code! 😊
-//   `)
-
 // Keyboard navigation for accessibility
 document.addEventListener("keydown", (e) => {
     // Close modal with Escape key
@@ -482,17 +448,4 @@ function initializeSplide(selector, options, extensions) {
 }
 
 // Initialize Splide sliders
-if (document.querySelector('.education-slider')) {
-    initializeSplide('.education-slider', {
-        type: 'loop',
-        perPage: 1,
-        arrows: false,
-        pagination: true,
-        autoplay: true,
-        interval: 2000,
-        gap: 30,
-        autoScroll: {
-            speed: 0.5,
-        },
-    });
-}
+
