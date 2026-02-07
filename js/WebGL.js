@@ -1,10 +1,8 @@
 // Fluid Dynamics Animation - put the animation on load, otherwise it bugs out
-if (document.readyState === 'complete') {
-  initFluid();
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initFluid);
 } else {
-  window.addEventListener('load', () => {
-    initFluid();
-  });
+  initFluid();
 }
 
 const initFluid = () => {
