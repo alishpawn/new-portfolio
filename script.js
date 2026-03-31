@@ -32,6 +32,11 @@ jQuery(function ($) {
   });
 });
 
+// Force reload on every visit (not on refresh)
+if (performance.navigation.type === performance.navigation.TYPE_BACK_FORWARD || performance.getEntriesByType('navigation')[0]?.type === 'back_forward') {
+    window.location.reload(true);
+}
+
 // Theme Management
 const themeToggle = document.getElementById("theme-toggle")
 const body = document.body

@@ -18,7 +18,7 @@
   },
   
   "socialMedia": {
-    "github": "https://github.com/AlishPawn1",
+    "github": "https://github.com/alishpawn",
     "linkedin": "https://www.linkedin.com/in/alish-pawn-06a10a346/",
     "facebook": "https://www.facebook.com/alishpawn1",
     "instagram": "https://www.instagram.com/alishpawn/"
@@ -103,20 +103,20 @@
       "id": "ecommerce",
       "title": "E-Commerce Platform",
       "category": "web",
-      "image": "image/ecommerce.avif",
+      "image": "image/newari traditional.png",
       "description": "Full-stack e-commerce application built with MERN stack featuring user authentication, product management, and payment integration.",
       "technologies": ["MongoDB", "Express", "React", "Node.js"],
-      "github": "https://github.com/AlishPawn1/ecommerce-react",
-      "live": null
+      "github": "https://github.com/alishpawn/ecommerce-react",
+      "live": "https://newaridress.expertservicehub.com/"
     },
     {
       "id": "newari-dress",
       "title": "Newari Traditional Dress Website",
       "category": "web",
-      "image": "image/newari traditional.png",
+      "image": "image/ecommerce.avif",
       "description": "Cultural website showcasing traditional Newari dresses with detailed information and gallery, built using PHP.",
       "technologies": ["PHP", "MySQL", "HTML", "CSS"],
-      "github": "https://github.com/AlishPawn1/fourthsemProject",
+      "github": "https://github.com/alishpawn/fourthsemProject",
       "live": null
     },
     {
@@ -126,7 +126,7 @@
       "image": "image/music.jpg",
       "description": "Django-based music streaming platform with user playlists, music upload, and streaming capabilities.",
       "technologies": ["Python", "Django", "SQLite", "Bootstrap"],
-      "github": "https://github.com/AlishPawn1/django",
+      "github": "https://github.com/alishpawn/django",
       "live": null
     },
     {
@@ -136,7 +136,7 @@
       "image": "image/mobile.avif",
       "description": "Android mobile application developed using Java in Android Studio with modern UI/UX design principles.",
       "technologies": ["Java", "Android Studio", "XML", "SQLite"],
-      "github": "https://github.com/AlishPawn1/mobile_programming",
+      "github": "https://github.com/alishpawn/mobile_programming",
       "live": null
     },
     {
@@ -146,8 +146,8 @@
       "image": "image/portfolio.png",
       "description": "Responsive personal portfolio website showcasing projects and skills, built with vanilla HTML, CSS, and JavaScript.",
       "technologies": ["HTML", "CSS", "JavaScript", "Responsive"],
-      "github": "https://github.com/AlishPawn1/portfolio",
-      "live": "https://alishpawn1.github.io/portfolio"
+      "github": "https://github.com/alishpawn/portfolio",
+      "live": "https://alishpawn.github.io/portfolio"
     },
     {
       "id": "404-collection",
@@ -156,8 +156,8 @@
       "image": "image/404.png",
       "description": "Creative collection of 404 error pages with unique designs and animations to enhance user experience.",
       "technologies": ["HTML", "CSS", "JavaScript", "Animations"],
-      "github": "https://github.com/AlishPawn1/404-collection",
-      "live": "https://alishpawn1.github.io/404-collection"
+      "github": "https://github.com/alishpawn/404-collection",
+      "live": "https://alishpawn.github.io/404-collection"
     },
     {
       "id": "shortcode",
@@ -166,8 +166,28 @@
       "image": "image/shortcode.png",
       "description": "Creative collection of code snippets with unique designs and implementations to enhance development workflow.",
       "technologies": ["HTML", "CSS", "JavaScript"],
-      "github": "https://github.com/AlishPawn1/short-code",
-      "live": "https://alishpawn1.github.io/short-code"
+      "github": "https://github.com/alishpawn/short-code",
+      "live": "https://alishpawn.github.io/short-code"
+    },
+    {
+      "id": "management-collection",
+      "title": "Result management system",
+      "category": "web",
+      "image": "image/result.png",
+      "description": "Result Management collection with pdf extraction and data management to enhance development workflow.",
+      "technologies": ["Nextjs", "Tailwind CSS", "Nodejs"],
+      "github": "https://github.com/alishpawn/result_management",
+      "live": "https://result.expertservicehub.com/"
+    },
+    {
+      "id": "erp-system",
+      "title": "ERP System",
+      "category": "web",
+      "image": "image/erpsystem.png",
+      "description": "ERP system with next js and tailwind css to enhance development workflow.",
+      "technologies": ["Nextjs", "Tailwind CSS"],
+      "github": "https://github.com/alishpawn/ERPsysterm",
+      "live": "https://expertservicehub.com/"
     }
   ],
   
